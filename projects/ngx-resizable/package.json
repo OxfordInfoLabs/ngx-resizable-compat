@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/3DGenomes/ngx-resizable/issues"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "homepage": "https://3dgenomes.github.io/ngx-resizable/"
 }
