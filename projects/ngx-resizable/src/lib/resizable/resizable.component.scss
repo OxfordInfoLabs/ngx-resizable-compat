@@ -18,7 +18,7 @@ $spacing: 8px;
 .cell {
 	box-sizing: border-box;
 	background: #fff;
-	border: $spacing/2 solid #f0f0f0;
+	border: calc($spacing/2) solid #f0f0f0;
 	flex: 1;
 	min-height: 60px;
 	&.resizable {
@@ -51,25 +51,25 @@ $spacing: 8px;
       position: absolute;
       box-sizing: border-box;
       display: block;
-      border: 1px solid #ccc;    
+      border: 1px solid #ccc;
   }
 }
 .rg-right, .rg-left {
   span {
       border-width: 0 1px;
       top: 50%; margin-top: -10px;
-      margin: -10px 0 0 $spacing/4;
+      margin: -10px 0 0 calc($spacing/4);
       height: 20px;
-      width: $spacing/2;
+      width: calc($spacing/2);
   }
 }
 .rg-top, .rg-bottom {
   span {
       border-width: 1px 0;
       left: 50%;
-      margin: $spacing/4 0 0 -10px;
+      margin: calc($spacing/4) 0 0 -10px;
       width: 20px;
-      height: $spacing/2;
+      height: calc($spacing/2);
   }
 }
 .rg-top     {
@@ -77,7 +77,7 @@ $spacing: 8px;
   width: 100%;
   top: 0;
   left: 0;
-  margin-top: -#{$spacing/2};
+  margin-top: -#{calc($spacing/2)};
 }
 .rg-right   {
   cursor: col-resize;
@@ -91,7 +91,7 @@ $spacing: 8px;
   width: 100%;
   bottom: 0;
   left: 0;
-  margin-bottom: -#{$spacing/2};
+  margin-bottom: -#{calc($spacing/2)};
 }
 .rg-left    {
   cursor: col-resize;
@@ -116,12 +116,12 @@ $spacing: 8px;
     margin-top: -#{$spacing};;
   }
   .rg-right   {
-    margin-right: -#{$spacing/2};
+    margin-right: -#{calc($spacing/2)};
   }
   .rg-bottom  {
     margin-bottom: -#{$spacing};
   }
   .rg-left    {
-    margin-left: -#{$spacing/2};
-  }  
+    margin-left: -#{calc($spacing/2)};
+  }
 }
